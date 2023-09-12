@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="icon" href="image.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="images.jpeg" alt=""></h2>
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <input type="date" id="due-date">
+                <select id="category-select">
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="shopping">Shopping</option>
+                </select>
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-box" placeholder="Search tasks...">
+            </div>
+            <div  class="task-list" id="list-container">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
